@@ -4,7 +4,7 @@ from sympy.solvers.diophantine import diophantine, symbols, diop_solve, cornacch
 
 Q = 41
 c, d = 554, 87
-k, l, m, n = symbols("k l m n", integer=True)
+k, l, m, n = symbols("x1 y1 x2 y2", integer=True)
 
 print(((k*n-d)-m))
 
@@ -13,4 +13,4 @@ print(((k*n-d)-m))
 for k in range(1,1000):
     for l in range(1,1000):
         if ((c+d)*l+d*k)/(k**2+k*l+l**2*Q) % 1 == 0:
-            print("k,l "+str(k)+" "+str(l))
+            print("x1,y1 "+str(k)+" "+str(l))

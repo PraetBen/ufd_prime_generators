@@ -1,0 +1,5 @@
+/trial_division_in_quadratic_ufd.ipynb
+.gitignore
+.idea/
+__pycache__/
+venv/
