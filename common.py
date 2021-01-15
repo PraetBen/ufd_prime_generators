@@ -10,9 +10,14 @@ def get_absolute_value(c, d):
     return c ** 2 + c * d + C * d ** 2
 
 
-def get_value(x):
+def f(x):
     """ Returns the value of the function x²+x+C """
-    return x ** 2 + x + C
+    return f(x, 1)
+
+
+def f(x, y):
+    """ Returns the value of the function x²+xy+y²*C """
+    return get_absolute_value(x, y)
 
 
 def is_prime(n):
