@@ -10,12 +10,7 @@ def get_absolute_value(c, d):
     return c ** 2 + c * d + C * d ** 2
 
 
-def f(x):
-    """ Returns the value of the function x²+x+C """
-    return f(x, 1)
-
-
-def f(x, y):
+def f(x, y=1):
     """ Returns the value of the function x²+xy+y²*C """
     return get_absolute_value(x, y)
 
