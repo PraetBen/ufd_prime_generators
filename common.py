@@ -2,7 +2,7 @@ import math
 
 # Definition of constants!
 
-C = 41
+C = 61
 
 
 def get_absolute_value(c, d):
