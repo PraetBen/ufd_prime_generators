@@ -39,3 +39,8 @@ There are a few polynomials that can be derived, each corresponding to a Heegner
  ![xyi_x2y2](Visualisations/images/xyi_x2y2.png?raw=true)
 
 In general, the following functions can be derived from the Heegner Numbers. As mentioned before, a transformation is necessary to make the mathematics work out, for those numbers that are 3 modulo 4 (which means: the numbers that have a remainder of 3, when you divide them by 4).  For the Heegner numbers, all are 3 modulo for except for 1 and 2. Therefore, we prefer to work with a generalized α.
+
+
+ ![xyi_x2y2](Visualisations/images/image024.png?raw=true)
+ 
+ ![xyi_x2y2](Visualisations/images/image025.png?raw=true)
