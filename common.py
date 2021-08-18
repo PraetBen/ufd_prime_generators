@@ -5,9 +5,9 @@ import math
 C = 61
 
 
-def get_absolute_value(c, d):
-    """ Returns the value of the function c²+cd+d²*C """
-    return c ** 2 + c * d + C * d ** 2
+def get_absolute_value(x, y):
+    """ Returns the value of the function x²+xy+y²*C """
+    return x ** 2 + x * y + C * y ** 2
 
 
 def f(x, y=1):
