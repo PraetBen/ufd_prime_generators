@@ -120,7 +120,7 @@ For each x do the following:
 There are many ways of implementing this: numerically, symbolically, or even by using matrices. The numerical implementation is the easiest to understand and is therefore provided. 
 
 * [The Github repository](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve/)
-* Link to run sieve in browser:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%numerical_implementation_demo.ipynb)
+* Link to run sieve in browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%numerical_implementation_demo.ipynb)
 
 ## Sieving mechanisms
 
@@ -254,7 +254,7 @@ It is possible to do even more than sieving with this special type of polynomial
 
 Some final comments on the Extended Sieve.
 * The sieve also works for x²+1 and x²+2 (see implementation + overview article for why)
-* For now, the new divisor ‘q’ is calculated by doing the actual division, but in fact, it can be calculated analytically (in a recursive manner) without doing this division. See more here.
+* For now, the new divisor ‘q’ is calculated by doing the actual division, but in fact, it can be calculated analytically (in a recursive manner) without doing this division. [See more here](Calculating_Divisor_Recursively.md).
 * The sieve works with 2x²+29, with some modifications. The working of the sieve is based on Unique Factorization, so maybe other polynomials related to class number 1 could also be working like this.
 * The full sieve (using heegner numbers), implemented in python, can be found [here](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve/numerical_implementation.ipynb).
 

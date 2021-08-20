@@ -44,9 +44,10 @@ This means that we do not need to check all integers (2, 3, 4, ….) to evaluate
 For example, to check if f(11, 13) = 7193 is prime, only 15 numbers need to be checked, namely 41, 43, 47, 53, 61, 71, 83, 97 and the squares 4, 9, 16, 25, 36, 49, 64, 81. Try yourself for any (smaller) (x, y) to observe that this is true!
 
 The actual implementation can be found on github.
-* Github
-* Demo implementation
-* Interactive article
+* [Github repository](https://github.com/PraetBen/ufd_prime_generators/tree/master/Extended_TrialDivision)
+* Demo implementation: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Trial_Division%numerical_implementation_demo.ipynb)
+* Interactive article: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Trial_Division%interactive_article.ipynb)
+
 
 The last link allows you to follow along with the article, in a Jupyter notebook (can be opened in the browser), if you are familiar with (python) programming. This allows you to play around and explore the examples.
 
@@ -140,8 +141,7 @@ Whenever there is no (xᵢ, yᵢ) that divides (x, y), you cannot make the concl
 ## Why does it work with 41 and not 61?
 The key to understanding why the sieving works with 41 and not 61 (or most other numbers), lies in unique factorization domains. In short, 41 is a special type of number (derived from Heegner Numbers) where unique factorization works, whereas for 61, it does not. More specifically Unique factorization holds only for C = 1, 2, 3, 5, 11, 17 and 41. Only for those numbers extended trial division works.
 
-See this article for a more detailed explanation. Not mandatory but helpful if you haven’t read about complex numbers, UFD and Heegner number and if you want to understand all the details.
-
+[See this article](Unique_Factorization_Domains.md) for a more detailed explanation. It is not mandatory but helpful if you haven’t read about complex numbers, UFD and Heegner number and if you want to understand all the details.
 
 The general function that is being considered can be written as follows.
 
@@ -215,10 +215,9 @@ Expanding N first into the (x, y) form and then finding its factors will lead to
 ## Conclusion
 Personally, the question that remains is, if it is new, or if this has any value for mathematics. Please let me know your thoughts on all of this. 
 
-
 For example, I wonder if this extended trial division would work with polynomials that are related to class number 1. The working of the sieve is based on Unique Factorization, so maybe other polynomials could also be working like this.
 
-It is possible to do even more than trial division with this special type of polynomials. When filling in y = 1, also the sieve of Eratosthenes can be extended! And I also made another prime generating method based on those same UFD polynomials. See here the overview. This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
+It is possible to do even more than trial division with this special type of polynomials. When filling in y = 1, also the sieve of Eratosthenes can be extended! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
 
 Ben Praet
 21/08/2021
