@@ -220,5 +220,6 @@ For example, I wonder if this extended trial division would work with polynomial
 It is possible to do even more than trial division with this special type of polynomials. When filling in y = 1, also the sieve of Eratosthenes can be extended! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
 
 Ben Praet
+
 21/08/2021
  

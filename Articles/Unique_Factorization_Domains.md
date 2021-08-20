@@ -126,10 +126,11 @@ And
 with C = 1, 2, 3, 5, 11, 17, 41
 
 ## Some final thoughts
-Note; they have ‘class number 1’. Question that remains is what with other functions with class number 1?
 
-I know that the sieve works for 2x²+29 for example, because I already made that one work
+The previous polynomials are derived from domains with 'Class number 1', as unique factorization holds. I wonder what other functions could be useful to find/generate prime numbers? The sieve works for 2x²+29 for example, as I managed to make one work with some additional modifications.
 
+For now, only trial division and the sieve of Eratosthenes was extended to these polynomials. Which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
 
 Ben Praet
+
 21/08/2021
