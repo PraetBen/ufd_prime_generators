@@ -1,8 +1,8 @@
 # Unique Factorization Domains and their related polynomials
 
 This article explains what unique factorization is, what complex numbers are, what a unique Factorization Domain (UFD) is, and the polynomials related to it. This is important as it allows to understand when and how prime numbers can be generated from those polynomials using various methods, among which:
-* Extended Trial division
-* Extended Sieve of Eratosthenes
+* [Extended Trial division](Extended_Trial_Division.md)
+* [Extended Sieve of Eratosthenes](Extended_Sieve_Of_Eratosthenes.md)
 
 ## Fundamental Theorem of Arithmetic
 This theorem says that any number n, can be written as a combination of prime numbers AND that it can only be done in a single unique way. The latter condition is particularly important to us. In practice, this means that a number can be factored into prime numbers (the ‘smallest blocks) and that there is only a single way to do that.
@@ -125,10 +125,12 @@ And
 
 with C = 1, 2, 3, 5, 11, 17, 41
 
-Note; they have ‘class number 1’. Question that remains is what with other functions with class number 1?
+## Some final thoughts
 
-I know that the sieve works for 2x²+29 for example, because I already made that one work
+The previous polynomials are derived from domains with 'Class number 1', as unique factorization holds. I wonder what other functions could be useful to find/generate prime numbers? The sieve works for 2x²+29 for example, as I managed to make one work with some additional modifications.
 
+For now, only trial division and the sieve of Eratosthenes was extended to these polynomials. Which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
 
 Ben Praet
+
 21/08/2021

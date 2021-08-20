@@ -1,29 +1,17 @@
 # Calculating the divisor q in a recursively for the Extended Sieve of Eratosthenes
 
-Calculating the divisor q in a recursive manner for the Extended Sieve of Eratosthenes
-In the previous article, we found that f(x+kq) is divisible by q, for any k ∈ ℤ. By evaluating f(x+kq)/q, another ‘new’ divisor was found, which in turn is used to find more composite numbers. This divisor was obtained by doing an (from a calculation point of view) expensive division operation.
+In the [previous article](Extended_Sieve_Of_Eratosthenes.md), we found that f(x+kq) is divisible by q, for any k ∈ ℤ. By evaluating f(x+kq)/q, another ‘new’ divisor was found, which in turn is used to find more composite numbers. This divisor was obtained by doing an (from a calculation point of view) expensive division operation.
  
 ![](images/Calculating_Divisor_Recursively/image001.png?raw=true) 
 
 However, by a recursive relation that I discovered, this new divisor can be calculated analytically without doing the actual division, through a recursive manner. The following shows how this is done. The notation changes slightly from f(x + kq) to f(x + kᵢqᵢ), which is divisible by qᵢ like usual, as well as by the newly found divisor qᵢ₊₁ ,the ‘new’ divisor.
 
- 
-
-
-
- 
-
 For this part, the general polynomial function f(x, y) = x² + xy + Cy² is necessary. The extended sieve uses x² + x + C, which is f(x, y) with y = 1. The notation (c, d) will be used, which corresponds to f(c, d).
-
- 
 
 To make this article easier to understand, a jupyter notebook project is provided which can be opened in the browser. The text below can be a bit hard to grasp, whereas interacting with the code might give a better feel for what is going on.
 
- 
+Jupyter notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%calculating_divisor_recursively.ipynb)
 
-Jupyter notebook:
-
- 
 
 ## Starting point k₀
 Starting the sieve with any k₀, f(k₀) will be divisible by itself and 1. So far, nothing shocking.
@@ -131,7 +119,10 @@ Additionally, if there would be an easy way to ‘find back’ the path of any v
 
 ## Some final thoughts
 
-...
+It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Unique_Factorization_Domains.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate or find prime numbers?
+
+See also [my github](https://github.com/PraetBen/ufd_prime_generators/) to stay up to date! 
 
 Ben Praet
+
 21/08/2021
