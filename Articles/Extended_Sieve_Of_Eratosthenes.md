@@ -31,7 +31,7 @@ The question now is: How can you find and cross out all the composites (in red)?
 
 There is a python notebook which can be opened in the browser to follow the article in interactive way.
 
-Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%2Finteractive_article.ipynb)
+Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve_Of_Eratosthenes%2Finteractive_article.ipynb)
 
 
 ## Step 1: Finding the first composites
@@ -120,7 +120,7 @@ For each x do the following:
 There are many ways of implementing this: numerically, symbolically, or even by using matrices. The numerical implementation is the easiest to understand and is therefore provided. 
 
 * [The Github repository](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve/)
-* Link to run sieve in browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%numerical_implementation_demo.ipynb)
+* Link to run sieve in browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve_Of_Eratosthenes%numerical_implementation_demo.ipynb)
 
 ## Sieving mechanisms
 

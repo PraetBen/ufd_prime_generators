@@ -1,6 +1,6 @@
 # Calculating the divisor q in a recursively for the Extended Sieve of Eratosthenes
 
-In the [previous article](Extended_Sieve.md), we found that f(x+kq) is divisible by q, for any k ∈ ℤ. By evaluating f(x+kq)/q, another ‘new’ divisor was found, which in turn is used to find more composite numbers. This divisor was obtained by doing an (from a calculation point of view) expensive division operation.
+In the [previous article](Extended_Sieve_Of_Eratosthenes.md), we found that f(x+kq) is divisible by q, for any k ∈ ℤ. By evaluating f(x+kq)/q, another ‘new’ divisor was found, which in turn is used to find more composite numbers. This divisor was obtained by doing an (from a calculation point of view) expensive division operation.
  
 ![](images/Calculating_Divisor_Recursively/image001.png?raw=true) 
 

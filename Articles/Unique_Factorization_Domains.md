@@ -2,7 +2,7 @@
 
 This article explains what unique factorization is, what complex numbers are, what a unique Factorization Domain (UFD) is, and the polynomials related to it. This is important as it allows to understand when and how prime numbers can be generated from those polynomials using various methods, among which:
 * [Extended Trial division](Extended_Trial_Division.md)
-* [Extended Sieve of Eratosthenes](Extended_Sieve.md)
+* [Extended Sieve of Eratosthenes](Extended_Sieve_Of_Eratosthenes.md)
 
 ## Fundamental Theorem of Arithmetic
 This theorem says that any number n, can be written as a combination of prime numbers AND that it can only be done in a single unique way. The latter condition is particularly important to us. In practice, this means that a number can be factored into prime numbers (the ‘smallest blocks) and that there is only a single way to do that.
