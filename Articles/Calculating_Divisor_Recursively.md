@@ -119,7 +119,8 @@ Additionally, if there would be an easy way to ‘find back’ the path of any v
 
 ## Some final thoughts
 
-...
+It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Unique_Factorization_Domains.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate or find prime numbers?
+
 
 Ben Praet
 21/08/2021
