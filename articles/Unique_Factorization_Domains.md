@@ -128,3 +128,7 @@ with C = 1, 2, 3, 5, 11, 17, 41
 Note; they have ‘class number 1’. Question that remains is what with other functions with class number 1?
 
 I know that the sieve works for 2x²+29 for example, because I already made that one work
+
+
+Ben Praet
+21/08/2021

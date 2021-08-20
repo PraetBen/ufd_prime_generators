@@ -267,3 +267,6 @@ Some final comments on the Extended Sieve.
 * The sieve also works for x²+1 and x²+2 (see implementation + overview article for why)
 * For now, the new divisor ‘q’ is calculated by doing the actual division, but in fact, it can be calculated analytically (in a recursive manner) without doing this division. See more here.
 * The sieve works with 2x²+29, with some modifications. The working of the sieve is based on Unique Factorization, so maybe other polynomials related to class number 1 could also be working like this.
+
+Ben Praet
+21/08/2021
