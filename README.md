@@ -15,8 +15,8 @@ For the extended sieve of eratosthenes, y = 1 must be filled in.
 The following articles provide information regarding the methods that I made.
 * [General information about UFD and their polynomials](Articles/Unique_Factorization_Domains.md)
 * [Extended sieve of Eratosthenes](Articles/Extended_Sieve_Of_Eratosthenes.md) 
-* [Extended trial division](Articles/Extended_Trial_Division.md) 
     * [How to calculate the divisor q recursively](Articles/Calculating_Divisor_Recursively.md)
+* [Extended trial division](Articles/Extended_Trial_Division.md) 
  
  Everything was also published on Medium.
  

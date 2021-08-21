@@ -10,7 +10,8 @@ For this part, the general polynomial function f(x, y) = x² + xy + Cy² is nece
 
 To make this article easier to understand, a jupyter notebook project is provided which can be opened in the browser. The text below can be a bit hard to grasp, whereas interacting with the code might give a better feel for what is going on.
 
-Jupyter notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve%calculating_divisor_recursively.ipynb)
+
+Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/master?filepath=2FExtended_Sieve_Of_Eratosthenes%calculating_divisor_recursively.ipynb)
 
 
 ## Starting point k₀
