@@ -1,4 +1,4 @@
-# Extending the Sieve of Eratosthenes to Polynomials (for the first time?)
+# Extending the Sieve of Eratosthenes to polynomials (for the first time?)
 
 In this article, the sieve of Eratosthenes is extended and applied (with some modifications) to polynomials of the form f(x)=x²+x+C. For some special C values, like 41, the sieve filters out all composites, ending up only with prime numbers. Just like the 'regular' sieve of Eratosthenes! It is something I have been working on in my free time and hopefully, you will find it as interesting as I do.
 
