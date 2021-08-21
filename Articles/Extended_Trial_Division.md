@@ -156,7 +156,7 @@ This can be easily verified by expanding the right-hand side of the equation, us
 ### Non-Unique Factorization
 When C=61, there is no unique factorization, and thus Extended Trial division does not work (as was demonstrated above).
 
-In this domain, an integer can be factored in two different ways. Therefore, even if we cannot find any other (xᵢ, yᵢ), there exists the possibility that it is still factorisable in ℤ in a different way. Consider the factorization of 91.
+In this domain, an integer can be factored in two different ways. Therefore, even if we cannot find any other (xᵢ, yᵢ), there exists the possibility that it is still factorizable in ℤ in a different way. Consider the factorization of 91.
 
 ![](images/Extended_Trial_Division/image025.jpg?raw=true) 
 
