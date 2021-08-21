@@ -7,62 +7,62 @@ This article explains what unique factorization is, what complex numbers are, wh
 ## Fundamental Theorem of Arithmetic
 This theorem says that any number n, can be written as a combination of prime numbers AND that it can only be done in a single unique way. The latter condition is particularly important to us. In practice, this means that a number can be factored into prime numbers (the ‘smallest blocks) and that there is only a single way to do that.
 
-![Fundamental theorem of Arithmetic](images/Unique_Factorization_Domains/image001.png?raw=true)
+![Fundamental theorem of Arithmetic](images/Unique_Factorization_Domains/image001.jpg?raw=true)
 
 While working with regular integers (in ℤ), unique factorization holds. As such, it may be difficult to see when or how this would not be valid anymore. It is only when going to complex numbers and other domains, that unique factorization can stop working.
 
 ## Domain ℤ[i]
 ℤ[i] consists of all numbers that are of the form a+bi, with a and b in ℤ.
  
-![Set Of Complex Integers](images/Unique_Factorization_Domains/image002.png?raw=true)
+![Set Of Complex Integers](images/Unique_Factorization_Domains/image002.jpg?raw=true)
 
 These types of numbers are called Gaussian integers. The length, or norm “N()”, of between the point and the origin is its absolute value. Visually, these numbers can be plotted on a two-dimensional plane, like classical vectors. The point (3, 2) corresponds to 3+2i. 
 
-![Norm Of Complex Integers](images/Unique_Factorization_Domains/image003.png?raw=true)
+![Norm Of Complex Integers](images/Unique_Factorization_Domains/image003.jpg?raw=true)
 
 ![Complex Numbers Visualized](images/Unique_Factorization_Domains/image004.jpg?raw=true)
 
 The number 13, which is a prime in ℤ, can be factored into two smaller gaussian integers and is reducible in ℤ[i]. As such, 13 is thus not a prime in ℤ[i], which is in strong contrast to its primality in ℤ. 
 
-![](images/Unique_Factorization_Domains/image005.png?raw=true)
+![](images/Unique_Factorization_Domains/image005.jpg?raw=true)
 
 ## Unique Factorization Domain ℤ[i]
 In ℤ[i], Unique factorization holds, which means that a number can only be factored in a single way. For example, 10 seems to be able to be factored in two possible ways:
 
-![](images/Unique_Factorization_Domains/image006.png?raw=true)
+![](images/Unique_Factorization_Domains/image006.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image007.png?raw=true)
+![](images/Unique_Factorization_Domains/image007.jpg?raw=true)
 
 However, 5, 2, (3+i) and (3-i) can be further reduced into the ‘smallest’ blocks (or Gaussian primes) as
 
 
-![](images/Unique_Factorization_Domains/image008.png?raw=true)
+![](images/Unique_Factorization_Domains/image008.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image009.png?raw=true)
+![](images/Unique_Factorization_Domains/image009.jpg?raw=true)
 
 And
 
-![](images/Unique_Factorization_Domains/image010.png?raw=true)
+![](images/Unique_Factorization_Domains/image010.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image011.png?raw=true)
+![](images/Unique_Factorization_Domains/image011.jpg?raw=true)
 
 This leads that 10 can be factorized to a unique combination of prime numbers. Hence, also in ℤ[i] unique factorization holds.
 
-![](images/Unique_Factorization_Domains/image012.png?raw=true)
+![](images/Unique_Factorization_Domains/image012.jpg?raw=true)
 
 So far, we have demonstrated how we can extend the domain ℤ into ℤ[i], where unique factorization and the Fundamental theorem of Arithmetic still applies.
 
 ## Non-Unique Factorization Domain ℤ[√5i]
 But consider now ℤ[√5i], which is a domain where unique factorization does not hold! This domain contains all the Gaussian integers that can be written in the form of a+b√5i with a and b in ℤ, as before.
 
-![](images/Unique_Factorization_Domains/image013.png?raw=true)
+![](images/Unique_Factorization_Domains/image013.jpg?raw=true)
 
 Consider now the factorization of 6.
 
-![](images/Unique_Factorization_Domains/image014.png?raw=true)
+![](images/Unique_Factorization_Domains/image014.jpg?raw=true)
 
 
-![](images/Unique_Factorization_Domains/image015.png?raw=true)
+![](images/Unique_Factorization_Domains/image015.jpg?raw=true)
 
 This time, we cannot reduce 6 into the same ‘smallest’ blocks. Both 3, 2, (1+√5i) and (1-√5i) are the primes and the ‘smallest’ blocks in ℤ[√5i]. The Fundamental Theorem of Arithmetic does not hold here, as there are two different ways to factorize one number. In other words, this domain is not a Unique Factorization Domain.
 
@@ -72,55 +72,49 @@ In general, a domain ℤ[√d i] is a Unique Factorization Domain (UFD) for just
 ## Polynomials related to UFDs
 There are a few polynomials that can be derived, each corresponding to a Heegner Number and thus related to the Unique Factorization Domain. For example, for ℤ[i], multiplying (x+yi) with its conjugate (x-yi), results in the ‘real’ polynomial x²+y². This is the same as its norm.
 
-![](images/Unique_Factorization_Domains/image016.png?raw=true)
+![](images/Unique_Factorization_Domains/image016.jpg?raw=true)
 
 In general, the following functions can be derived from the Heegner Numbers. As mentioned before, a transformation is necessary to make the mathematics work out, for those numbers that are 3 modulo 4 (which means: the numbers that have a remainder of 3, when you divide them by 4).  For the Heegner numbers, all are 3 modulo 4 except for 1 and 2. As it gets a bit messier after the transformation, we prefer to work with a generalized α.
 
 For d = 1, 2:
 
-![](images/Unique_Factorization_Domains/image017.png?raw=true)
+![](images/Unique_Factorization_Domains/image017.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image018.png?raw=true)
+![](images/Unique_Factorization_Domains/image018.jpg?raw=true)
 
 For example, for d = 1,
 
-![](images/Unique_Factorization_Domains/image019.png?raw=true)
+![](images/Unique_Factorization_Domains/image019.jpg?raw=true)
 For d > 2,
 
-![](images/Unique_Factorization_Domains/image020.png?raw=true)
+![](images/Unique_Factorization_Domains/image020.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image021.png?raw=true)
+![](images/Unique_Factorization_Domains/image021.jpg?raw=true)
 
-![](images/Unique_Factorization_Domains/image022.png?raw=true)
-
- 
+![](images/Unique_Factorization_Domains/image022.jpg?raw=true)
 
 Some helpful equations that will help you if you want to verify the math, for α and its conjugate ᾱ.
 
-![](images/Unique_Factorization_Domains/image023.png?raw=true)
-
-![](images/Unique_Factorization_Domains/image024.png?raw=true)
-
-
+![](images/Unique_Factorization_Domains/image023.jpg?raw=true)
 
 
 For example, for d = 163,
 
-![](images/Unique_Factorization_Domains/image025.png?raw=true)
+![](images/Unique_Factorization_Domains/image024.jpg?raw=true)
 
 For the set generated by this function, unique factorization holds. This means that it is not possible to find two different ways of factoring the same number. Because of that property, algorithms like Trial division and the sieve of Eratosthenes can be extended in these Gaussian domains.
 
 ## Resulting Polynomials
 In summary the algorithms work for the following functions:
 
-![](images/Unique_Factorization_Domains/image026.png?raw=true)
+![](images/Unique_Factorization_Domains/image025.jpg?raw=true)
 
 
 With C = 1, 2
 
 And
 
-![](images/Unique_Factorization_Domains/image027.png?raw=true)
+![](images/Unique_Factorization_Domains/image026.jpg?raw=true)
 
 
 with C = 1, 2, 3, 5, 11, 17, 41
