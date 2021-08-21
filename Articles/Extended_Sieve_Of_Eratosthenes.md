@@ -31,7 +31,7 @@ The question now is: How can you find and cross out all the composites (in red)?
 
 There is a python notebook which can be opened in the browser to follow the article in interactive way.
 
-Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve_Of_Eratosthenes%2Finteractive_article.ipynb)
+Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/master?filepath=2FExtended_Sieve_Of_Eratosthenes%2Finteractive_article.ipynb)
 
 
 ## Step 1: Finding the first composites
