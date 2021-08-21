@@ -212,7 +212,7 @@ Personally, the question that remains is, if it is new, or if this has any value
 
 For example, I wonder if this extended trial division would work with polynomials that are related to class number 1. The working of the sieve is based on Unique Factorization, so maybe other polynomials could also be working like this.
 
-It is possible to do even more than trial division with this special type of polynomials. When filling in y = 1, also the sieve of Eratosthenes can be extended! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
+It is possible to do even more than trial division with this special type of polynomials. When filling in y = 1, also [the sieve of Eratosthenes can be extended](Extended_Sieve_Of_Eratosthenes.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to generate prime numbers?
 
 Ben Praet
 
