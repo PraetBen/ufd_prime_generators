@@ -249,7 +249,7 @@ It can be observed that
 is always divisible by x, for any k. The sieving is done by crossing out all the (x + kx) positions, starting from k = 1. This is indeed the same as saying that all multiples of x are sieved out. It says nothing much, but the similarity with the extended sieve of Eratosthenes is striking, when looking at the ‘regular’ sieve in this manner.
 
 ## Some final thoughts
-Personally, the question that remains is, if it is new, or if this has any value for mathematics. Please let me know your thoughts on all of this.  
+Personally, the question that remains is, if it is new, or if this has any value for mathematics. Please let me know your thoughts on all of this. I appreciate it.
 
 It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Unique_Factorization_Domains.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to find/generate prime numbers?
 
