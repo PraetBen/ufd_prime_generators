@@ -11,7 +11,7 @@ For this part, the general polynomial function f(x, y) = x² + xy + Cy² is nece
 To make this article easier to understand, a jupyter notebook project is provided which can be opened in the browser. The text below can be a bit hard to grasp, whereas interacting with the code might give a better feel for what is going on.
 
 
-Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/master?filepath=2FExtended_Sieve_Of_Eratosthenes%calculating_divisor_recursively.ipynb)
+Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/master?filepath=Extended_Sieve_Of_Eratosthenes%2Fcalculating_divisor_recursively.ipynb)
 
 
 ## Starting point k₀
@@ -36,7 +36,6 @@ Solving then for c₁ and d₁ is trivial:
 
 This way, the first divisor for f(k₀), being f(k₀) itself in fact. This can just be considered as a starting point of the sieve. This notation is used so that it will be easier to see the recursive nature of the next divisor.
 
- 
 
 ## Second ‘series’ of composites k₁
 This new divisor q₁ can now be used to create the next series of composites, just as in the regular sieving method. Recall that f(xᵢ + qᵢ) is divisible by qᵢ and another (unknown) composite qᵢ₊₁. This will now be calculated analytically for the next series, where q₁ is already found above. The new divisor q₂ is what we want to obtain.
@@ -68,10 +67,7 @@ Continuing the same logic, the next “series” of composites, will be of the f
 
 ![](images/Calculating_Divisor_Recursively/image012.jpg?raw=true) 
 
-
-
 The term series is used in this context as we can fill in any k₂ and find a whole series of new composites. Solving for c₃ and d₃, the new divisor q₃ can be found. This divisor is based on only the kᵢ used.
-
 
 ![](images/Calculating_Divisor_Recursively/image013.jpg?raw=true) 
  
@@ -85,7 +81,6 @@ Rewriting it in terms of the already found divisors, allows us to see the recurs
 ![](images/Calculating_Divisor_Recursively/image016.jpg?raw=true) 
 
 ![](images/Calculating_Divisor_Recursively/image017.jpg?raw=true) 
-
 
 
 **Numerical example:**
