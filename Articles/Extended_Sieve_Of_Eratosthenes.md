@@ -1,4 +1,4 @@
-# Extending the Sieve of Eratosthenes to Polynomials (for the first time?)
+# Extending the Sieve of Eratosthenes to polynomials (for the first time?)
 
 In this article, the sieve of Eratosthenes is extended and applied (with some modifications) to polynomials of the form f(x)=x²+x+C. For some special C values, like 41, the sieve filters out all composites, ending up only with prime numbers. Just like the 'regular' sieve of Eratosthenes! It is something I have been working on in my free time and hopefully, you will find it as interesting as I do.
 
@@ -251,7 +251,7 @@ is always divisible by x, for any k. The sieving is done by crossing out all the
 ## Some final thoughts
 Personally, the question that remains is, if it is new, or if this has any value for mathematics. Please let me know your thoughts on all of this. I appreciate it.
 
-It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Unique_Factorization_Domains.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to find/generate prime numbers?
+It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Extended_Trial_Division.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to find/generate prime numbers?
 
 Some final comments on the Extended Sieve.
 * The sieve also works for x²+1 and x²+2 (see implementation + overview article for why).
