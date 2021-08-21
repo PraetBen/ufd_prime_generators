@@ -189,7 +189,6 @@ We can see that both can be reduced to consist of the same ‘smallest’ blocks
 
 An integer can be factored in only a unique way. Therefore, if we cannot find any (xᵢ, yᵢ) that divides f(x, y), it must mean that it is also not factorizable in ℤ in a different way, and thus prime.
 
-
 More generally, we can see that in the complex domain, any f(x, y) can be factored into two complex integers (x+yα) and (x+yᾱ). Thus, it is always reducible in the complex domain. In the case when N is prime in ℤ, N cannot be factored. In the complex domain, factorization is still possible, but its terms cannot be made ‘smaller’ and there is no ‘real’ equivalent for the complex number. 
 
 ![](images/Extended_Trial_Division/image032.jpg?raw=true) 

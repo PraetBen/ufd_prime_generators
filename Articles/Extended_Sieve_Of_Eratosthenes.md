@@ -131,7 +131,7 @@ Consider f(x) of the form ax²+bx+c.
 
 For this type of polynomial, the following property holds.
 
-    When f(x)=p*q, in other words when q divides f(x), then q also divides f(x+kq) for any k ∈  ℤ.
+    When f(x)=pq, in other words when q divides f(x), then q also divides f(x+kq) for any k ∈ ℤ.
     
 This can be easily proven by evaluating f(x+kq)
 
@@ -149,7 +149,6 @@ Substituting back f(x)=pq and then rearranging
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image013.jpg?raw=true)
 
- 
 
 Now it is clear that f(x+kq) can be divided by q, for any q that divides f(x). This property is used to explain why the sieving works.
 
@@ -170,14 +169,13 @@ The last question that remains is why and when this sieve works. For most polyno
 
 The key to understanding why the sieving works with 41 and not 61 or most other numbers, lies in unique factorization domains. In short, 41 is a special type of number (derived from Heegner Numbers) where unique factorization works, whereas for 61, is not. More specifically Unique factorization holds only for C = 1, 2, 3, 5, 11, 17 and 41. Only for those numbers, the extended sieve works.
 
-See [this article](Unique_Factorization_Domains.md) for a more detailed explanation. Not mandatory but helpful if you haven’t read about complex numbers, UFD and Heegner number and if you want to understand all the details.
+See [this article](Unique_Factorization_Domains.md) for a more detailed explanation. It is not mandatory but helpful if you haven’t read about complex numbers, UFD and Heegner number and if you want to understand all the details.
 
 The function can be rewritten in the complex domain as
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image014.jpg?raw=true)
 
 where
-
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image015.jpg?raw=true)
 
@@ -194,7 +192,9 @@ This is a function where unique factorization does not hold. Consider x = 5, whi
 
 This shows us that there are two different ways to factor 91, as both 13 and 7 have nothing to do with (5 + α) and (5 + ᾱ). There is no unique factorization here, as 91 is factored in two very different and unrelated ways.
 
-This demonstrates why composites are present other than those found by the sieving method. This means that the sieve does not work now anymore. On the contrary, no such composites show up for functions where the unique factorization holds, which is why there are only primes left after the sieving.
+This demonstrates why composites are present other than those found by the sieving method. Despite that the sieve does not find the factors in (x, y), doesn't mean that there is no other way of factoring the number in ℤ, and hence it is not necessarily a prime. The sieve still crosses out composites, but not all of them!
+
+This means that the sieve does not work now anymore. On the contrary, no such composites show up for functions where unique factorization holds, which is why there are only primes left after the sieving.
 
 ### Unique factorization
 Now, let’s look at f(x) = x² + x + 41
@@ -225,15 +225,16 @@ And that
 This illustrates that both ways of factorizing the number consists in the end of the same ‘smallest’ blocks and shows that the factorization is really unique.
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image024.jpg?raw=true)
- 
+
+Whenever the sieve does not find the factors in (x, y), it must mean that there is also no other way of factoring the number in ℤ, and hence it is certainly a prime number.
 
 ## Generalized Sieve Of Eratosthenes
 
-You probably have already noticed  the similarity with the regular sieve of Eratosthenes. There is an overcomplicated way of looking at this sieving method, so that all the previous is also valid for the ‘regular’ sieve of Eratosthenes. Therefore, the sieving method introduced in this article could also be called the “Generalized Sieve Of Eratosthenes”.
+You probably have already noticed the similarity with the regular sieve of Eratosthenes. There is an overcomplicated way of looking at this sieving method, so that all the previous is also valid for the ‘regular’ sieve of Eratosthenes. Therefore, the sieving method introduced in this article could also be called the “Generalized Sieve Of Eratosthenes”.
 
 Remember the property that was used for sieving the polynomials, namely 
 
-    When f(x)=p*q, in other words when q divides f(x), then q also divides f(x + kq) for any k ∈  ℤ.
+    When f(x)=pq, in other words when q divides f(x), then q also divides f(x + kq) for any k ∈ ℤ.
 
 For f(x) = x, which corresponds to the set of all integers, this also works. The only change that needs to be made is that p will always equal 1.
  
@@ -253,10 +254,10 @@ Personally, the question that remains is, if it is new, or if this has any value
 It is possible to do even more than sieving with this special type of polynomials. For example, also [trial division can be extended](Unique_Factorization_Domains.md)! This makes me wonder, which other methods, now used on regular integers, could we apply on those polynomials to find/generate prime numbers?
 
 Some final comments on the Extended Sieve.
-* The sieve also works for x²+1 and x²+2 (see implementation + overview article for why)
+* The sieve also works for x²+1 and x²+2 (see implementation + overview article for why).
 * For now, the new divisor ‘q’ is calculated by doing the actual division, but in fact, it can be calculated analytically (in a recursive manner) without doing this division. [See more here](Calculating_Divisor_Recursively.md).
 * The sieve works with 2x²+29, with some modifications. The working of the sieve is based on Unique Factorization, so maybe other polynomials related to class number 1 could also be working like this.
-* The full sieve (using heegner numbers), implemented in python, can be found [here](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve/numerical_implementation.ipynb).
+* The full sieve (using heegner numbers), implemented in python, can be found [here](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve_Of_Eratosthenes/numerical_implementation.ipynb).
 
 Ben Praet
 
