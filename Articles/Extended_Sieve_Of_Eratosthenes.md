@@ -1,8 +1,8 @@
 # Extending the Sieve of Eratosthenes to Polynomials (for the first time?)
 
-In this article, the logic and method behind the sieve of Eratosthenes is extended to polynomials of the form f(x)=x²+x+C. For some special C values, like 41, the sieve filters out all composites, ending up only with prime numbers. It is something I have been working on in my free time and hopefully, you will find it as interesting as I do.
+In this article, the sieve of Eratosthenes is extended and applied (with some modifications) to polynomials of the form f(x)=x²+x+C. For some special C values, like 41, the sieve filters out all composites, ending up only with prime numbers. Just like the 'regular' sieve of Eratosthenes! It is something I have been working on in my free time and hopefully, you will find it as interesting as I do.
 
-To the best of my (limited mathematical) knowledge, nobody applied the sieve of Eratosthenes on polynomials before and sieving is currently only done on the regular list of integers. In this article, I show when and how it is possible to extend the sieve to certain polynomials. For most other polynomials, this sieving process does not seem to work. Let’s find out why!
+To the best of my (limited mathematical) knowledge, nobody applied the sieve of Eratosthenes on polynomials before and sieving is currently only done on the regular list of integers. In this article, I show when and how it is possible to extend the sieve to certain polynomials. For most other polynomials, this sieving process does not work. Let’s find out why!
 
 ## A personal note
 I’m not a mathematician. My notation and terminology are probably off. What you will read here is based on my own experimental findings and patterns I discovered while ‘playing around’ with prime numbers quite a long time ago. In short, I discovered multiple new ways to generate prime numbers by using polynomials that are related to Unique Factorization Domains. I give no proof as I don’t know how to do such a thing. The best I could do was to try and intuitively explain the patterns that I have discovered.
@@ -27,11 +27,11 @@ The values of this function are listed below in the table, for -25 <= x < 150. T
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image003.jpg?raw=true)
 
-The question now is: How can you find and cross out all the composites (in red)? Note, for example, the position of the first composites, namely at 40, 41, 44, 49, 56, 65 and 76. There are exactly 0, 2, 4, 6 and 10 primes between those. However, this pattern fails at 81, where an ‘unexpected’ composite shows up. It turns out there will be two steps necessary to find all the composites, and the first will use of the discovered pattern.
+The question now is: How can you find and cross out all the composites (in red)? Note, for example, the position of the first composites, namely at 40, 41, 44, 49, 56, 65 and 76. There are exactly 0, 2, 4, 6 and 10 primes between those. However, this pattern fails at 81, where an ‘unexpected’ composite shows up. It turns out there will be two steps necessary to find all the composites, and the first will use of this pattern.
 
 There is a python notebook which can be opened in the browser to follow the article in interactive way.
 
-Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/master?filepath=2FExtended_Sieve_Of_Eratosthenes%2Finteractive_article.ipynb)
+Run it here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=Extended_Sieve_Of_Eratosthenes%2Finteractive_article.ipynb)
 
 
 ## Step 1: Finding the first composites
@@ -72,7 +72,7 @@ After completing these steps for all x values, you can find and cross the first 
 ![](images/Extended_Sieve_Of_Eratosthenes/image004.jpg?raw=true)
 
 
-It turns out that, we can use the composites that were crossed out before to find those missing composites. Let’s look now at the first composites that were found by the sieve:
+It turns out that, we can use the composites that were crossed out before to find those missing composites. Let’s look now at the first composites that were found by the sieve, and their respective factorization:
 
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image005.jpg?raw=true)
@@ -105,7 +105,7 @@ Each composite found and crossed out, generates another new set of composites by
 | 65  | Try   | yourself!     |
 
 
-By applying these steps to each composite that has been found, the sieve ends up with only prime numbers remaining. In other words, the sieve crosses all the composites out! This is the crucial step in making the sieve work.
+By applying this to each composite that has been found, the sieve ends up with only prime numbers remaining. In other words, the sieve crosses all the composites out! This is the crucial step in making the sieve work.
 
 ## Programming the sieve
 The process above can be implemented to program a sieve. Below, a pseudo code is given to make you understand the logic behind it. As the sieve only goes up to a certain cut-off value, only the ‘relevant’ composites should be considered, namely those under the cut-off value.
@@ -120,11 +120,11 @@ For each x do the following:
 There are many ways of implementing this: numerically, symbolically, or even by using matrices. The numerical implementation is the easiest to understand and is therefore provided. 
 
 * [The Github repository](https://github.com/PraetBen/ufd_prime_generators/Extended_Sieve/)
-* Link to run sieve in browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=%2FExtended_Sieve_Of_Eratosthenes%numerical_implementation_demo.ipynb)
+* Link to run sieve in browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PraetBen/ufd_prime_generators/HEAD?filepath=Extended_Sieve_Of_Eratosthenes%2Fnumerical_implementation_demo.ipynb)
 
 ## Sieving mechanisms
 
-The process above to cross out polynomials can be explained by first proving a property of polynomials in general. Then, how this property is used to implement the sieving mechanism described above is shown.
+The process above to cross out polynomials can be explained by first proving a property of polynomials in general. Then, it is shown how this property is used to implement the sieving mechanism described above.
 
 ### A Property of polynomials
 Consider f(x) of the form ax²+bx+c.
@@ -137,7 +137,7 @@ This can be easily proven by evaluating f(x+kq)
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image010.jpg?raw=true)
 
-Expanding  (x+kq)² and then rearranging
+Expanding (x+kq)² and then rearranging
 
 ![](images/Extended_Sieve_Of_Eratosthenes/image011.jpg?raw=true)
 
