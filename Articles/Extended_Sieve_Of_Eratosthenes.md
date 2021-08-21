@@ -19,13 +19,13 @@ The Sieve of Eratosthenes is one of the most intuitive methods to generate the c
 ## Sieving Euler’s prime generating polynomial
 To some of you, the following polynomial might ring a bell:
 
-![](images/Extended_Sieve_Of_Eratosthenes/image002.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image002.jpg?raw=true)
 
 This function is known as a prime generating polynomial and was discovered by Euler, who, already back in the 1700’s, noticed that this was quite a special function - when inserting integers starting from 0 all the way up to 40, all resulting numbers are prime.
 
 The values of this function are listed below in the table, for -25 <= x < 150. The black values of x indicate that f(x) is a prime number, whereas the red ones indicate composites.
 
-![](images/Extended_Sieve_Of_Eratosthenes/image003.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image003.jpg?raw=true)
 
 The question now is: How can you find and cross out all the composites (in red)? Note, for example, the position of the first composites, namely at 40, 41, 44, 49, 56, 65 and 76. There are exactly 0, 2, 4, 6 and 10 primes between those. However, this pattern fails at 81, where an ‘unexpected’ composite shows up. It turns out there will be two steps necessary to find all the composites, and the first will use of the discovered pattern.
 
@@ -69,21 +69,21 @@ Then, just as in the regular sieve of Eratosthenes, go to the next number (namel
 
 After completing these steps for all x values, you can find and cross the first series of composites out. The found composites are crossed out and highlighted in light grey colour in the figure below. As you can see, there still are some composites that were not found by the sieve. In other words, the sieving is not complete. For example, the composite at x=84 or at x=91 have not been found yet.
 
-![](images/Extended_Sieve_Of_Eratosthenes/image004.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image004.jpg?raw=true)
 
 
 It turns out that, we can use the composites that were crossed out before to find those missing composites. Let’s look now at the first composites that were found by the sieve:
 
 
-![](images/Extended_Sieve_Of_Eratosthenes/image005.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image005.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image006.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image006.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image007.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image007.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image008.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image008.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image009.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image009.jpg?raw=true)
 
 Two observations can be made from this:
 
@@ -135,19 +135,19 @@ For this type of polynomial, the following property holds.
     
 This can be easily proven by evaluating f(x+kq)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image010.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image010.jpg?raw=true)
 
 Expanding  (x+kq)² and then rearranging
 
-![](images/Extended_Sieve_Of_Eratosthenes/image011.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image011.jpg?raw=true)
 
 Substituting f(x)=ax²+bx+c and then rearranging
 
-![](images/Extended_Sieve_Of_Eratosthenes/image012.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image012.jpg?raw=true)
 
 Substituting back f(x)=pq and then rearranging
 
-![](images/Extended_Sieve_Of_Eratosthenes/image013.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image013.jpg?raw=true)
 
  
 
@@ -174,23 +174,23 @@ See [this article](Unique_Factorization_Domains.md) for a more detailed explanat
 
 The function can be rewritten in the complex domain as
 
-![](images/Extended_Sieve_Of_Eratosthenes/image014.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image014.jpg?raw=true)
 
 where
 
 
-![](images/Extended_Sieve_Of_Eratosthenes/image015.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image015.jpg?raw=true)
 
 Below some helpful equations if you want to verify the math.
 
-![](images/Extended_Sieve_Of_Eratosthenes/image016.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image016.jpg?raw=true)
 
 ### Non-unique factorization
 Let’s look at f(x) = x² + x + 61.
 
 This is a function where unique factorization does not hold. Consider x = 5, which is not crossed out by the sieve. Examining f(5) in more detail, it can be observed that:
 
-![](images/Extended_Sieve_Of_Eratosthenes/image017.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image017.jpg?raw=true)
 
 This shows us that there are two different ways to factor 91, as both 13 and 7 have nothing to do with (5 + α) and (5 + ᾱ). There is no unique factorization here, as 91 is factored in two very different and unrelated ways.
 
@@ -201,30 +201,30 @@ Now, let’s look at f(x) = x² + x + 41
 
 This is a function where unique factorization holds. Consider again x = 5, which is not crossed out by the sieve. Examining f(5) in more detail, it can be observed that:
  
-![](images/Extended_Sieve_Of_Eratosthenes/image018.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image018.jpg?raw=true)
 
 Both (5 + α) and (5 + ᾱ) are no further factorable, and 71 is a prime number. As unique factorization holds, the fact that 71 can be factorized using the complex domain, it must mean that there is no other possible way to factor it.
 
 Consider then as a final illustration the composite generated by the sieving method:
 
-![](images/Extended_Sieve_Of_Eratosthenes/image019.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image019.jpg?raw=true)
  
 
 6847 is divisible by both 167 & 41 and by (82+ α) & (82+ ᾱ) in the complex domain. Given that we are in a Unique Factorization Domain, unique factorization must hold. This means that (82+ α) and (82+ ᾱ) must be further factorable, consisting of the same ‘smallest’ blocks. Indeed, it can be found that:
 
-![](images/Extended_Sieve_Of_Eratosthenes/image020.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image020.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image021.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image021.jpg?raw=true)
 
 And that
 
-![](images/Extended_Sieve_Of_Eratosthenes/image022.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image022.jpg?raw=true)
 
-![](images/Extended_Sieve_Of_Eratosthenes/image023.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image023.jpg?raw=true)
 
 This illustrates that both ways of factorizing the number consists in the end of the same ‘smallest’ blocks and shows that the factorization is really unique.
 
-![](images/Extended_Sieve_Of_Eratosthenes/image024.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image024.jpg?raw=true)
  
 
 ## Generalized Sieve Of Eratosthenes
@@ -239,11 +239,11 @@ For f(x) = x, which corresponds to the set of all integers, this also works. The
  
 Consider
 
-![](images/Extended_Sieve_Of_Eratosthenes/image025.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image025.jpg?raw=true)
 
 It can be observed that
 
-![](images/Extended_Sieve_Of_Eratosthenes/image026.png?raw=true)
+![](images/Extended_Sieve_Of_Eratosthenes/image026.jpg?raw=true)
 
 is always divisible by x, for any k. The sieving is done by crossing out all the (x + kx) positions, starting from k = 1. This is indeed the same as saying that all multiples of x are sieved out. It says nothing much, but the similarity with the extended sieve of Eratosthenes is striking, when looking at the ‘regular’ sieve in this manner.
 
