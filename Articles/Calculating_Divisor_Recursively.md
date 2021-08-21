@@ -1,4 +1,4 @@
-# Calculating the divisor q in a recursively for the Extended Sieve of Eratosthenes
+# Calculating the divisor q recursively for the Extended Sieve of Eratosthenes
 
 In the [previous article](Extended_Sieve_Of_Eratosthenes.md), we found that f(x+kq) is divisible by q, for any k ∈ ℤ. By evaluating f(x+kq)/q, another ‘new’ divisor was found, which in turn is used to find more composite numbers. This divisor was obtained by doing an (from a calculation point of view) expensive division operation.
  
@@ -37,7 +37,7 @@ Solving then for c₁ and d₁ is trivial:
 This way, the first divisor for f(k₀), being f(k₀) itself in fact. This can just be considered as a starting point of the sieve. This notation is used so that it will be easier to see the recursive nature of the next divisor.
 
 
-## Second ‘series’ of composites k₁
+## First ‘series’ of composites k₁
 This new divisor q₁ can now be used to create the next series of composites, just as in the regular sieving method. Recall that f(xᵢ + qᵢ) is divisible by qᵢ and another (unknown) composite qᵢ₊₁. This will now be calculated analytically for the next series, where q₁ is already found above. The new divisor q₂ is what we want to obtain.
 
 ![](images/Calculating_Divisor_Recursively/image007.jpg?raw=true) 
@@ -61,7 +61,7 @@ Considering the example which the original sieving article started with, where t
  
 Another way to write this is [k₀, k₁] = [1, 2], indicating the ‘path’ that was followed. This example basically says that f(1+2*43) will be divisible by 179, and that there will be more composites on f(1+2*43+179k) for any k.
 
-## Third ‘series’ of composites k₃
+## Second ‘series’ of composites k₂
 
 Continuing the same logic, the next “series” of composites, will be of the form:
 
